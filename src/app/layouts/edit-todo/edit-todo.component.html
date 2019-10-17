@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="md-form">
+                <input mdbInput type="text" 
+                        id="task" 
+                        [(ngModel)]="task"
+                        class="form-control">
+                <label for="form1" class="">Task</label>
+        </div>
+
+        <!-- Default checked -->
+        <mdb-checkbox [(ngModel)]="completed"
+                      [default]="true">Completed</mdb-checkbox>
+        <button mdbBtn color="info" type="submit" class="mt-3"
+                (click)="saveTodo()">{{todo ? 'Update': 'Add'}}</button>
+    </div>
+
+</div>
